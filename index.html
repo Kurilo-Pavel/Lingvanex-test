@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lingvanex</title>
+  <link rel="stylesheet" href="./fonts.css"/>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<header class="header"></header>
+
+<section class="block">
+  <div class="block-title block__block-title">
+    <h1 class="title block__title">
+      Travel and Hospitality
+    </h1>
+    <p class="text block__text manrope">
+      Offline & Online Translation: image translation, translation history, file translation,
+      bookmarks, dictionary meaning.
+    </p>
+  </div>
+  <button class="button block__button button_active">
+    Request a free trial
+  </button>
+</section>
+
+<section class="section">
+  <div class="block-title block__block-title">
+    <h2 class="title sub-title section__title">
+      Our language solution
+    </h2>
+    <p class="text block__text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since
+    </p>
+  </div>
+  <div class="block-solution">
+    <div class="card block-solution__card">
+      <div class="block-title block-solution__block-title">
+        <h3 class="title card__title">
+          Translation
+        </h3>
+        <p class="text block-solution__text">
+          Unlimited and secure translation for fixed price. Translate billions of characters per day
+        </p>
+      </div>
+      <img src="./png/Translation.png" alt="Translation">
+    </div>
+    <div class="card block-solution__card">
+      <div class="block-title block-solution__block-title">
+        <h3 class="title card__title">
+          Social listening
+        </h3>
+        <p class="text block-solution__text">
+          Unlimited and secure translation for fixed price. Translate billions of characters per day
+        </p>
+      </div>
+      <img src="./png/Social_listening.png" alt="Social listening">
+    </div>
+    <div class="card block-solution__card">
+      <div class="block-title block-solution__block-title">
+        <h3 class="title card__title">
+          Content generation
+        </h3>
+        <p class="text block-solution__text">
+          Unlimited and secure translation for fixed price. Translate billions of characters per day
+        </p>
+      </div>
+      <img src="./png/Content_generation.png" alt="Content generation">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="block-title section__block-title">
+    <h2 class="title sub-title section__title">
+      Who is this product for?
+    </h2>
+    <p class="text block__text">
+      Lingvanex Bot can simply solve a language barrier problem in your team, community,
+      with your international clients and outsourcing partners. It automatically identifies the languages
+      in a conversation and translates all messages of your team members into a chosen language.
+    </p>
+  </div>
+  <div class="section-content">
+    <div class="section-buttons">
+      <button
+        class="button section-buttons__button button_active"
+        onclick="handleClick(this)"
+        data-id="travelers"
+      >
+        For travelers
+      </button>
+      <button
+        class="button section-buttons__button button_inactive"
+        onclick="handleClick(this)"
+        data-id="organization"
+      >
+        For travel organization
+      </button>
+      <button
+        class="button section-buttons__button button_inactive"
+        onclick="handleClick(this)"
+        data-id="employees"
+      >
+        For employees
+      </button>
+    </div>
+    <div class="block-travel">
+      <div class="card block-travel__card block-travel__card-active" data-id="travelers">
+        <div class="block-travel__inform">
+          <h3 class="title sub-title">For travelers</h3>
+          <ul class="text block-travel__text">
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms. and more.</li>
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms. and more.</li>
+          </ul>
+        </div>
+        <img class="block-travel__image" src="./png/For_travelers.png" alt="For travelers">
+      </div>
+      <div class="card block-travel__card block-travel__card-inactive" data-id="organization">
+        <div class="block-travel__inform">
+          <h3 class="title sub-title">For travel organization</h3>
+          <ul class="text block-travel__text">
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms. and more.</li>
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms. and more.</li>
+          </ul>
+        </div>
+        <img class="block-travel__image" src="./png/For_travel_organization.png" alt="For travel organization">
+      </div>
+      <div class="card block-travel__card block-travel__card-inactive" data-id="employees">
+        <div class="block-travel__inform">
+          <h3 class="title sub-title">For employees</h3>
+          <ul class="text block-travel__text">
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms, hypernyms, hyponyms. and more.</li>
+            <li>Highlight one word in the text on the page.</li>
+            <li>Word meaning, pronunciation, synonyms,hypernyms, hyponyms. and more.</li>
+          </ul>
+        </div>
+        <img class="block-travel__image" src="./png/For_employees.png" alt="For employees">
+      </div>
+      <span class="card wrapper-one"></span>
+      <span class="card wrapper-two"></span>
+    </div>
+  </div>
+  <button class="button block__button button_active block-travel__button">
+    Request a free trial
+  </button>
+
+</section>
+
+<section class="section help__section">
+  <h2 class="title sub-title section__title">
+    How can Lingvanex help you?
+  </h2>
+  <div class="help__cards">
+    <div class="help__row">
+      <div class="item">
+        <img class="item__image" src="./png/triangle.svg" alt="triangle">
+        <h3 class="title card__title item__title">
+          Book trips & tickets easily
+        </h3>
+        <p class="text item__text">
+          We provide cloud, sdk and on-premise translation solutions. All your private data stays with you.
+        </p>
+      </div>
+      <div class="item">
+        <img class="item__image" src="./png/square.svg" alt="square">
+        <h3 class="title card__title item__title">
+          Translate in real time
+        </h3>
+        <p class="text item__text">
+          The price starts from $100 / month and depends on number of languages.
+        </p>
+      </div>
+      <div class="item">
+        <img class="item__image" src="./png/circle.svg" alt="circle">
+        <h3 class="title card__title item__title">
+          Translate any hotel services
+        </h3>
+        <p class="text item__text">
+          Every language model size is 70mb.SDK uses 200mb of RAM memory.
+        </p>
+      </div>
+    </div>
+    <div class="help__row">
+      <div class="item">
+        <img class="item__image" src="./png/square.svg" alt="square">
+        <h3 class="title card__title item__title">
+          Communicate easily
+        </h3>
+        <p class="text item__text">
+          We provide cloud, sdk and on-premise translation solutions. All your private data stays with you.
+        </p>
+      </div>
+      <div class="item">
+        <img class="item__image" src="./png/wrong_triangle.svg" alt="triangle">
+        <h3 class="title card__title item__title">
+          Knowledge bases for employees
+        </h3>
+        <p class="text item__text">
+          The price starts from $100 / month and depends on number of languages.
+        </p>
+      </div>
+      <div class="item">
+        <img class="item__image" src="./png/rhombus.svg" alt="rhombus">
+        <h3 class="title card__title item__title">
+          Website & promo translation
+        </h3>
+        <p class="text item__text">
+          SDK has trial project and manual.Dependency managers are supported.
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="button block__button button_active">
+    Request a free trial
+  </button>
+</section>
+
+<footer class="footer"></footer>
+</body>
+<script src="script.js"></script>
+</html>

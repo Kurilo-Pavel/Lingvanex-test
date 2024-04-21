@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.header {
+  height: 80px;
+  background: #f5cbd1;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.block-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block__block-title {
+  gap: 24px;
+  width: min-content;
+}
+
+.title {
+  font-family: Inter-bold;
+}
+
+.block__title {
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  width: max-content;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: Inter;
+}
+
+.manrope {
+  font-family: Manrope;
+}
+
+.block__text {
+  text-align: center;
+  color: #2A2B2FCC;
+}
+
+.button {
+  border: none;
+  border-radius: 12px;
+  font-family: Inter;
+}
+
+.block__button {
+  padding: 20px 93px;
+  font-size: 20px;
+}
+
+.button_active {
+  background: #0146FE;
+  color: #FFFFFF;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding-top: 61px;
+}
+
+.section__block-title {
+  gap: 32px;
+  width: min-content;
+  padding-top: 6px;
+}
+
+.sub-title {
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1px;
+}
+
+.section__title {
+  padding-inline: 118px;
+  width: max-content;
+}
+
+.block-solution {
+  display: flex;
+  gap: 20px;
+  padding-block: 6px 64px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  border: 2px solid #0000000A;
+  border-radius: 32px;
+  box-shadow: 0 2px 6px 0 #00000014;
+  background: #FFFFFF;
+}
+
+.block-solution__card {
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: min-content;
+  padding: 24px 16px 16px;
+}
+
+.block-solution__block-title {
+  gap: 12px;
+}
+
+.block-solution__text {
+  text-align: center;
+  color: #2A2B2FCC;
+}
+
+.card__title {
+  font-size: 34px;
+  line-height: 34px;
+  letter-spacing: -1px;
+}
+
+.section-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.section-buttons__button {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.button_inactive {
+  background: #F4F6FD;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  height: 560px;
+}
+
+.block-travel {
+  position: relative;
+}
+
+.block-travel__card {
+  position: absolute;
+  flex-direction: row;
+  gap: 32px;
+  top: 0;
+  left: 0;
+  padding: 42px;
+  background: #FFFFFF;
+}
+
+.block-travel__inform {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 514px;
+}
+
+.block-travel__text {
+  padding-left: 25px;
+  color: #2A2B2FCC;
+}
+
+.block-travel__text > li {
+  max-width: 390px;
+}
+
+.block-travel__image {
+  border-radius: 32px;
+}
+
+.block-travel__card-active {
+  position: relative;
+  visibility: visible;
+  z-index: 3;
+}
+
+.block-travel__card-inactive {
+  position: absolute;
+  visibility: hidden;
+}
+
+.wrapper-one {
+  position: absolute;
+  width: 1042px;
+  height: 386px;
+  left: 53px;
+  top: 64px;
+  z-index: 2;
+}
+
+.wrapper-two {
+  position: absolute;
+  width: 973px;
+  height: 361px;
+  left: 88px;
+  top: 117px;
+  z-index: 1;
+}
+
+.help__section {
+  background: #F4F6FD;
+  padding-block: 70px 6px;
+}
+
+.help__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.help__row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 295px;
+  height: 266px;
+}
+
+.item__image {
+  padding-block: 9px 15px;
+}
+
+.item__title {
+  text-align: center;
+}
+
+.item__text {
+  color: #7A869C;
+  text-align: center;
+}
+
+.footer {
+  height: 536px;
+  background: #f5cbd1;
+}
+
+@media (max-width: 1150px) {
+  .block-travel {
+    margin-inline: 20px;
+  }
+  
+  .block-travel__inform {
+    width: auto;
+  }
+  
+  .wrapper-one {
+    width: 90%;
+    bottom: -25px;
+    top: auto;
+  }
+  
+  .wrapper-two {
+    width: 80%;
+    bottom: -55px;
+    top: auto;
+  }
+  
+  .section__title {
+    padding-inline: 0;
+  }
+}
+
+@media (max-width: 1050px) {
+  .block-travel__image {
+    width: 50%;
+  }
+}
